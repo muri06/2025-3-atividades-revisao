@@ -13,25 +13,3 @@
 3. Acesse https://dummyjson.com/docs, escolha quais dados irá usar e monte 1 ou 2 UI com componentes shadcnui e tailwind com dados locais (variáveis), realize commit
 4. Adicione gerenciamento de estado a(s) UI(s) criadas, realize commit
 5. Adicione acesso a API https://dummyjson.com/docs
-
-
-## Boilerplate criado
-
-Adicionei um boilerplate mínimo em Next + TypeScript + Tailwind e exemplo funcional:
-
-- Estrutura: `pages/`, `components/`, `lib/`, `services/`, `styles/`.
-- Estado: `Zustand` em `lib/store.ts` com dados iniciais `lib/products.ts` (mocks locais).
-- UI de exemplo: lista de produtos em [pages/index.tsx](pages/index.tsx#L1).
-- Componente de card: [components/ProductCard.tsx](components/ProductCard.tsx#L1).
-- Integração API: `services/api.ts` com `fetchProducts()` que consome `https://dummyjson.com`.
-
-Para executar localmente:
-
-```bash
-npm install
-npm run dev
-```
-
-Observações:
-- Usei `next` 14 nas dependências do `package.json`; ajuste se necessário.
-- `next/image` com imagens remotas exige configuração de domínios; para simplicidade usei `img`.
